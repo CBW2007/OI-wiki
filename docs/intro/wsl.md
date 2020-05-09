@@ -28,7 +28,7 @@ Windows 10 作为微软的新一代操作系统，紧跟时代潮流，在一周
     适用于 Linux 的 Windows 子系统（英语：Windows Subsystem for Linux，简称 WSL）是一个为在 Windows 10 和 Windows Server 2019 上能够原生运行 Linux 二进制可执行文件（ELF 格式）的兼容层。
 
     WSL提供了一个由微软开发的Linux兼容的内核接口（不包含Linux内核代码），然后可以在其上运行GNU用户空间，例如Ubuntu，openSUSE，SUSE Linux Enterprise Server，Debian和Kali Linux。这样的用户空间可能包含Bash shell和命令语言，使用本机GNU/Linux命令行工具（sed，awk等），编程语言解释器（Ruby，Python等），甚至是图形应用程序（使用主机端的X窗口系统）。
-
+    
     WSL仅在版本1607之后的64位版本的Windows 10中可用。它也可在Windows Server 2019中使用。
 
 * * *
@@ -195,7 +195,18 @@ sudo service xrdp restart
 <div align='center'> 不换端口的结果 </div>
  运行命令 `vim /etc/xrdp/xrdp.ini`，把 `port=3389` 改为别的（如 `port=3390`），然后保存即可。
 ![](./images/WSL13.png)
- 运行 `sudo service xrdp restart`，然后去开始菜单，用 `localhost: 你配置的端口 ` 来访问。
+ 然后运行 `sudo service xrdp restart`即可。
+
+接下来是常见的Xrdp命令：
+
+```bash
+sudo service xrdp start   #启动服务（开机第一次连接前使用）
+sudo service xrdp stop    #停止服务（关闭连接后使用）
+sudo service xrdp restart #重新启动服务（配置更改后使用）
+```
+
+最后，<kbd>Win</kbd>+<kbd>R</kbd>在弹出的窗口中输入`mstsc`，打开远程桌面连接，计算机名填写`localhost:你配置的端口`并开始连接：
+
 ![](./images/WSL14.png)
 ![](./images/WSL15.png)
 
