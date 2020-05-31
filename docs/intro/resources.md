@@ -1,4 +1,4 @@
-author: Konano, Enter-tainer, JulieSigtuna, GldHkkowo
+author: Konano, Enter-tainer, JulieSigtuna, GldHkkowo, Suyun514
 
 ## 在线评测平台
 
@@ -7,8 +7,8 @@ author: Konano, Enter-tainer, JulieSigtuna, GldHkkowo
 ### 国内
 
 -    [51Nod](https://www.51nod.com/) 有许多值得尝试的数学题和思维题。
--    [BZOJ](https://www.lydsy.com/JudgeOnline/) 因原属衡阳八中而得简称，汇聚多种习题和真题，题目质量相对较高，但可能需要联系邮箱。  
-    BZOJ 上有大量题目只有付费用户才能提交。2018 年 BZOJ 测试数据泄露，催生了 DarkBZOJ。
+-    [BZOJ](https://www.lydsy.com/JudgeOnline/) 因原属衡阳八中而得简称，汇聚多种习题和真题，题目质量相对较高。但是 BZOJ 上有大量题目只有付费用户才能提交。  
+    因为用户体验较差，BZOJ 常年受到选手的诟病，因此催生了 [new_bzoj](https://vijos.org/d/newbzoj/) （测试数据来源为作者收集和选手众筹）和 [DarkBZOJ](http://darkbzoj4e24q4c4.onion/) （搭建在暗网上，测试数据疑似使用技术手段获得）。2018 年 BZOJ 测试数据泄露，催生了 [黑暗爆炸 OJ](https://darkbzoj.tk/) 。如果只需要题面，可以使用 [BZOJCH](https://github.com/Ruanxingzhi/bzojch) 或 [BZPRO](https://remmina.github.io/BZPRO/) 。
 -    [Comet OJ](https://www.cometoj.com) 始于 2018 年，旨在为广大算法爱好者提供一个竞技、练习、交流的平台，经常举办原创性的高质量比赛，有丰富的题库。
     <!-- - [CodeVS](http://www.codevs.cn/) 面向 OI 选手的过气 OJ。 -->
 -    [FZUOJ](http://acm.fzu.edu.cn/) 始于 2008 年，福州大学在线评测系统。
@@ -22,7 +22,7 @@ author: Konano, Enter-tainer, JulieSigtuna, GldHkkowo
     Libre 取自由之意，基于开源项目 [SYZOJ](https://github.com/syzoj/syzoj) 。
     题目所有测试数据以及提交的代码均对所有用户开放。
 -    [Lutece](https://acm.uestc.edu.cn/home) 始于 2018 年，电子科技大学在线评测系统， [项目开源](https://github.com/lutece-awesome) 。
--    [洛谷](https://www.luogu.org/) 始于 2013 年，社区群体庞大，OI 界的真题和习题较全，提供有偿教育服务。
+-    [洛谷](https://www.luogu.com.cn/) 始于 2013 年，社区群体庞大，OI 界的真题和习题较全，提供有偿教育服务。
 -    [牛客网](https://www.nowcoder.com/) 始于 2014 年，提供技术类求职备考、社群交流、企业招聘等服务。
 -    [NOJ](http://acm.njupt.edu.cn/) 始于 2018 年，南京邮电大学在线评测系统， [项目开源](https://github.com/ZsgsDesign/NOJ) ，自身拥有题目两千余，同时支持对多个国内外 OJ 的提交，可以直接在 NOJ 提交别的 OJ 的题。
 -    [NTUOJ](http://acm.csie.ntu.edu.tw) 始于 2007 年，台湾大学在线评测系统，基于开源项目 [Judge Girl](http://judgegirl.github.io/) 。
@@ -45,14 +45,14 @@ author: Konano, Enter-tainer, JulieSigtuna, GldHkkowo
 -    [HackerRank](https://www.hackerrank.com/) 有很多比赛
 -    [ICPC Live Archive](https://icpcarchive.ecs.baylor.edu/) 存档了 1990 年至今的 ICPC 区域赛和总决赛题目；但部分比赛的评测数据仅为样例数据，且对 Special Judge 的支持不完善。
 -    [ICPC Problem Archive](https://judge.icpc.global) 基于 Kattis 系统；存档了 2012 年至今的 ICPC 全球总决赛题目，并且会在总决赛开赛时同步发放题目（但不会有同步赛）。
--    [Kattis](https://open.kattis.com/) 题库主要包含类似 ICPC 比赛的题目；根据用户解题情况评定用户等级，推荐适合该用户水平的 trivial/easy/medium/hard 四类难度的题目，其中题目难度采用类 ELO 等级分系统来评估。
+-    [Kattis](https://open.kattis.com/) 题库主要包含类似 ICPC 比赛的题目；根据用户解题情况评定用户等级，推荐适合该用户水平的 trivial/easy/medium/hard 四类难度的题目，其中题目难度采用类 [ELO 等级分](https://zh.wikipedia.org/wiki/%E7%AD%89%E7%BA%A7%E5%88%86) 系统来评估。
 -    [LeetCode](https://leetcode.com/) 码农面试刷题网站，有中文分站： [LeetCode China](https://leetcode-cn.com/) 。
 -    [Light OJ](http://lightoj.com) 一个快挂了的 OJ， `www` 域名无法访问，请使用 [根域名](http://lightoj.com) 访问
 -    [opentrains](http://opentrains.snarknews.info/) 俄罗斯 [Open Cup](http://opencup.ru/) 比赛的训练平台，基于 [ejudge](https://ejudge.ru/) 开源系统搭建，支持虚拟比赛；题库包含历年 Open Cup 赛题以及 Petrozavodsk 训练营的题目。
 -    [SPOJ](http://www.spoj.com) 始于 2003 年，其后台系统 [Sphere Engine](https://sphere-engine.com/) 于 2008 年商业化；支持题目点赞和标签功能。
 -    [TopCoder](https://www.topcoder.com/) 始于 2001 年，其 [竞技编程社区](https://www.topcoder.com/community/competitive-programming/) 有很多比赛；目前主营业务是技术众包。
 -    [TimusOJ](http://acm.timus.ru/) 始于 2000 年，由 Ural Federal University 开发，拥有俄罗斯最大的在线评测题库，题目主要来自乌拉尔联邦大学校赛、乌拉尔锦标赛、ICPC 乌拉尔区域赛、以及 Petrozavodsk 训练营。
--   Online Judge（前 [UVaOJ](https://uva.onlinejudge.org/) ）始于 1995 年，国际成名最早的 OJ，创始人是西班牙 University of Valladolid (UVa) 的 Miguel Ángel Revilla 教授；由于 [Revilla 教授于 2018 年不幸离世](https://www.elnortedecastilla.es/valladolid/muere-profesor-miguel-20180402225739-nt.html) ，且 Valladolid 大学终止维护，UVaOJ 自 2019 年 7 月起更名为 Online Judge； [刘汝佳强烈安利](http://product.dangdang.com/20637355.html) 。
+-   Online Judge（前 [UVaOJ](https://uva.onlinejudge.org/) ）始于 1995 年，国际成名最早的 OJ，创始人是西班牙 University of Valladolid (UVa) 的 Miguel Ángel Revilla 教授；由于 [Revilla 教授于 2018 年不幸离世](https://www.elnortedecastilla.es/valladolid/muere-profesor-miguel-20180402225739-nt.html) ，且 Valladolid 大学终止维护，UVaOJ 自 2019 年 7 月起更名为 Online Judge。现在该平台的维护者 [正在 Github 上构建新的评测平台](https://github.com/TheOnlineJudge/ojudge) 。
 -    [Yandex](https://contest.yandex.ru/) 存档了近几年的全俄罗斯信息学奥赛。
 
 ## 教程资料
@@ -69,6 +69,7 @@ author: Konano, Enter-tainer, JulieSigtuna, GldHkkowo
 -    [由 hzwer 收集整理自互联网的课件](https://github.com/hzwer/sharePPT) 
 -    [Trinkle23897 的课件](https://github.com/Trinkle23897/oi_slides) 
 -    [huzecong 的课件](https://github.com/huzecong/oi-slides) 
+-    [Open Data Structure](https://opendatastructures.org/) 内含众多数据结构讲稿
 
 ## 书籍
 
@@ -121,6 +122,10 @@ author: Konano, Enter-tainer, JulieSigtuna, GldHkkowo
 -    [acm-cheat-sheet](https://github.com/soulmachine/acm-cheat-sheet) 
 -    [Competitive Programmer’s Handbook](https://cses.fi/book/book.pdf) - Antti Laaksonen
     作者花了三年个人时间完成。面向算法竞赛，覆盖面广，详略得当。
+-    [《挑战编程：程序设计竞赛训练手册》](http://acm.cs.buap.mx/downloads/Programming_Challenges.pdf) - Steven S. Skiena/Miguel A. Revilla
+    由西班牙 University of Valladolid 的两位教授编写。
+    -    [阅读经过翻译的在线电子版图书](http://www.tup.com.cn/upload/books/yz/030502-01.pdf) 
+    -    [购买纸质版图书](http://www.tup.tsinghua.edu.cn/booksCenter/book_03050201.html) 
 
 ## 工具
 

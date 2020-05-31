@@ -80,7 +80,7 @@
 
 由于回文树的构造过程中，节点本身就是按照拓扑序插入，因此只需要逆序枚举所有状态，将当前状态的出现次数加到其 fail 指针对应状态的出现次数上即可。
 
-例题： [「APIO2014」回文串](https://www.luogu.org/problem/P3649) 
+例题： [「APIO2014」回文串](https://www.luogu.com.cn/problem/P3649) 
 
 定义 $s$ 的一个子串的存在值为这个子串在 $s$ 中出现的次数乘以这个子串的长度。对于给定的字符串 $s$ ，求所有回文子串中的最大存在值。
 
@@ -193,7 +193,7 @@ border：若 $0 \le r < |s|$ ， $pre(s,r)=suf(s,r)$ ，就称 $pre(s,r)$ 是 $s
 
 若 $t$ 是回文串，由 $t$ 是 $s$ 的 border，因此 $\forall 1 \le i \le |t|, s[i]=s[|s|-|t|+i]=s[|s|-i+1]$ ，因为 $|s| \le 2|t|$ ，所以 $s$ 也是回文串。
 
-引理 $3$ ： $t$ 是字符串 $s$ 的 border，则 $|s|-|t|$ 是 $s$ 的周期， $|s|-|t|$ 为 $s$ 的最小周期，当且仅当 $t$ 是 $s$ 的最长回文真后缀。
+引理 $3$ ： $t$ 是回文串 $s$ 的 border，则 $|s|-|t|$ 是 $s$ 的周期， $|s|-|t|$ 为 $s$ 的最小周期，当且仅当 $t$ 是 $s$ 的最长回文真后缀。
 
 引理 $4$ ： $x$ 是一个回文串， $y$ 是 $x$ 的最长回文真后缀， $z$ 是 $y$ 的最长回文真后缀。令 $u,v$ 分别为满足 $x=uy,y=vz$ 的字符串，则有下面三条性质
 
@@ -229,7 +229,7 @@ border：若 $0 \le r < |s|$ ， $pre(s,r)=suf(s,r)$ ，就称 $pre(s,r)$ 是 $s
 
 根据上面证明的结论，如果使用 $slink$ 指针向上跳的话，每向后填加一个字符，只需要向上跳 $O(\log |s|)$ 次。因此，可以考虑将一个等差数列表示的所有回文串的 $dp$ 值之和（在原问题中指 $\min$ ），记录到最长的那一个回文串对应节点上。
 
- $g[v]$ 表示 $v$ 所在等差数列的 $dp$ 值之和，且 $v$ 是这个等差数列中长度最长的节点，则 $g[v]=\sum_{slink[x]=v} dp[i-len[x]]$ 。
+ $g[v]$ 表示 $v$ 所在等差数列的 $dp$ 值之和，且 $v$ 是这个等差数列中长度最长的节点，则 $g[v]=\sum_{x,slink[x]=v} dp[i-len[x]]$ ，这里 $i$ 是当前枚举到的下标。
 
 下面我们考虑如何更新 $g$ 数组和 $dp$ 数组。以下图为例，假设当前枚举到第 $i$ 个字符，回文树上对应节点为 $x$ 。 $g[x]$ 为橙色三个位置的 $dp$ 值之和（最短的回文串 $slink[x]$ 算在下一个等差数列中）。 $fail[x]$ 上一次出现位置是 $i-diff[x]$ （在 $i-diff[x]$ 处结束）， $g[fail[x]]$ 包含的 $dp$ 值是蓝色位置。因此， $g[x]$ 实际上等于 $g[fail[x]]$ 和多出来一个位置的 $dp$ 值之和，多出来的位置是 $i-(len[slink[x]]+diff[x])$ 。最后再用 $g[x]$ 去更新 $dp[i]$ ，这部分等差数列的贡献就计算完毕了，不断跳 $slink[x]$ ，重复这个过程即可。具体实现方式可参考例题代码。
 
@@ -332,11 +332,11 @@ border：若 $0 \le r < |s|$ ， $pre(s,r)=suf(s,r)$ ，就称 $pre(s,r)$ 是 $s
 
 ## 例题
 
--    [最长双回文串](https://www.luogu.org/problem/P4555) 
+-    [最长双回文串](https://www.luogu.com.cn/problem/P4555) 
 
--    [拉拉队排练](https://www.luogu.org/problem/P1659) 
+-    [拉拉队排练](https://www.luogu.com.cn/problem/P1659) 
 
--    [「SHOI2011」双倍回文](https://www.luogu.org/problem/P4287) 
+-    [「SHOI2011」双倍回文](https://www.luogu.com.cn/problem/P4287) 
 
 -    [HDU 5421 Victor and String](http://acm.hdu.edu.cn/showproblem.php?pid=5421) 
 

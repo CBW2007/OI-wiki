@@ -10,7 +10,7 @@ ST 表是用于解决 **可重复贡献问题** 的数据结构。
 
 ## 引入
 
- [ST 表模板题](https://www.luogu.org/problemnew/show/P3865) 
+ [ST 表模板题](https://www.luogu.com.cn/problem/P3865) 
 
 题目大意：给定 $n$ 个数，有 $m$ 个询问，对于每个询问，你需要回答区间 $[l,r]$ 中的最大值。
 
@@ -20,7 +20,7 @@ ST 表是用于解决 **可重复贡献问题** 的数据结构。
 
 ## ST 表
 
-ST 表基于 [倍增](../basic/binary-acc.md) 思想，可以做到 $\Theta(n\log n)$ 预处理， $\Theta(1)$ 回答每个询问。但是不支持修改操作。
+ST 表基于 [倍增](../basic/binary-lifting.md) 思想，可以做到 $\Theta(n\log n)$ 预处理， $\Theta(1)$ 回答每个询问。但是不支持修改操作。
 
 基于倍增思想，我们考虑如何求出区间最大值。可以发现，如果按照一般的倍增流程，每次跳 $2^i$ 步的话，询问时的复杂度仍旧是 $\Theta(\log n)$ ，并没有比线段树更优，反而预处理一步还比线段树慢。
 
@@ -48,7 +48,7 @@ ST 表基于 [倍增](../basic/binary-acc.md) 思想，可以做到 $\Theta(n\lo
 
 ## 模板代码
 
- [ST 表模板题](https://www.luogu.org/problemnew/show/P3865) 
+ [ST 表模板题](https://www.luogu.com.cn/problem/P3865) 
 
 ```cpp
 #include <bits/stdc++.h>
@@ -119,11 +119,11 @@ ST 表能较好的维护“可重复贡献”的区间信息（同时也应满�
 
 ## 练习
 
- [RMQ 模板题](https://www.luogu.org/problemnew/show/P3865) 
+ [RMQ 模板题](https://www.luogu.com.cn/problem/P3865) 
 
  [「SCOI2007」降雨量](https://loj.ac/problem/2279) 
 
- [\[USACO07JAN\]平衡的阵容 Balanced Lineup](https://www.luogu.org/problem/P2880) 
+ [\[USACO07JAN\]平衡的阵容 Balanced Lineup](https://www.luogu.com.cn/problem/P2880) 
 
 ## 附录：ST 表求区间 GCD 的时间复杂度分析
 

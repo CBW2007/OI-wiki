@@ -102,7 +102,7 @@ $$
 -   常数函数： $1(n)=1$ 
 -   除数函数： $\sigma_{k}(n)=\sum_{d\mid n}d^{k}$  $\sigma_{0}(n)$ 通常简记作 $\operatorname{d}(n)$ 或 $\tau(n)$ ， $\sigma_{1}(n)$ 通常简记作 $\sigma(n)$ 。
 -   欧拉函数： $\varphi(n)=\sum_{i=1}^n [\gcd(i,n)=1]$ 
--   莫比乌斯函数： $\mu(n) = \begin{cases}1 & n=1 \\ 0 & \exists d:d^{2} \mid n \\ (-1)^{\omega(n)} & otherwise\end{cases}$ 其中 $\omega(n)$ 表示 $n$ 的本质不同质因子个数，是一个加性函数。
+-   莫比乌斯函数： $\mu(n) = \begin{cases}1 & n=1 \\ 0 & \exists d>1:d^{2} \mid n \\ (-1)^{\omega(n)} & otherwise\end{cases}$ 其中 $\omega(n)$ 表示 $n$ 的本质不同质因子个数，是一个积性函数。
 
 * * *
 
@@ -279,7 +279,7 @@ $$
 
 ## 问题形式
 
-###  [「HAOI 2011」Problem b](https://www.luogu.org/problem/P2522) 
+###  [「HAOI 2011」Problem b](https://www.luogu.com.cn/problem/P2522) 
 
 求值（多组数据）
 
@@ -469,7 +469,7 @@ $$
     }
     ```
 
-###  [「BZOJ 2154」Crash 的数字表格](https://www.luogu.org/problem/P1829) 
+###  [「BZOJ 2154」Crash 的数字表格](https://www.luogu.com.cn/problem/P1829) 
 
 求值（对 $20101009$ 取模）
 
@@ -696,7 +696,7 @@ $$
     }
     ```
 
-###  [「luogu 3768」简单的数学题](https://www.luogu.org/problemnew/show/P3768) 
+###  [「luogu 3768」简单的数学题](https://www.luogu.com.cn/problem/P3768) 
 
 求
 
