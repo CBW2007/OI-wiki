@@ -23,5 +23,5 @@ jobs:
     - run: cd /tmp
     - run: git clone https://github.com/CBW2007/OI-wiki.git -b gh-pages
     - run: cd OI-wiki
-    - run: git remote add coding https://${{CODING_USER}}:${{CODING_TOKEN}}@e.coding.net/CBW2007/oi-wiki-mirror.git
+    - run: git remote add coding https://${{secrets.CODING_USER}}:${{secrets.CODING_TOKEN}}@e.coding.net/CBW2007/oi-wiki-mirror.git
     - run: git push coding gh-pages:coding-pages -f
