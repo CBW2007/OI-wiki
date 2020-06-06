@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Gitee
+name: Coding
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -20,12 +20,8 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    - name: Single repo mirror
-      uses: Yikun/hub-mirror-action@master
-      with:
-        src: github/OI-wiki
-        dst: gitee/OI-wiki
-        dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
-        dst_token: ${{ secrets.GITEE_TOKEN }}
-        white_list: "OI-wiki"
-        force_update: true
+    - run: cd /tmp
+    - run: git clone https://github.com/CBW2007/OI-wiki.git -b gh-pages
+    - run: cd OI-wiki
+    - run: git remote add coding https://${{CODING_USER}}:${{CODING_TOKEN}}@e.coding.net/CBW2007/oi-wiki-mirror.git
+    - run: git push coding gh-pages:coding-pages -f
