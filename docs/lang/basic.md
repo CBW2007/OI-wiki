@@ -252,8 +252,18 @@ int main() {
 #else
 // code for other OS
 #endif
+
+#ifdef DEBUG
+// debug code
+#endif
+
+#ifndef func
+#define func
+// code here
+// 防止重复定义！
+#endif
 ```
 
-可以在编译的时候通过 `-DLINUX` 来控制编译出的代码，而无需修改源文件。这还有一个优点：通过 `-DLINUX` 编译出的可执行文件里并没有其他操作系统的代码，那些代码在预处理的时候就已经被删除了。
+可以在编译的时候通过 `-DLINUX` 来控制编译出的代码，而无需修改源文件；或者是在代码头部插入`#define LINUX`。这还有一个优点：这样编译出的可执行文件里并没有其他操作系统的代码，那些代码在预处理的时候就已经被删除了。
 
  `#define` 还能使用 `#` 、 `##` 运算符，极大地方便调试。
